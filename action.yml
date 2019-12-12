@@ -1,0 +1,17 @@
+name: 'Go make action'
+description: "Runs make targets passed as parameter"
+
+inputs:
+  target:  
+    description: 'Make target to run'
+    required: true
+
+outputs:
+  output_msg: 
+    description: 'A simple output in case we want to use something in a different action'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.target }}
