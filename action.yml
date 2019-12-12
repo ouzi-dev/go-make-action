@@ -1,5 +1,8 @@
 name: 'Go make action'
-description: "Runs make targets passed as parameter"
+description: "Runs make targets passed as a parameter"
+branding:
+  icon: 'box'  
+  color: 'blue'
 
 inputs:
   target:  
