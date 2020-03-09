@@ -1,3 +1,3 @@
-FROM quay.io/ouzi/go-builder:1.13.8
+FROM quay.io/ouzi/go-builder:1.14.0
 
 ENTRYPOINT [ "make" ]
